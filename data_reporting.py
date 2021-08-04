@@ -15,10 +15,13 @@ def df_screen(df):
     - [] df size
     - [] column names
     - [] data type per column
-    - [] min and max for number type
-    - [] random datapoint for non_number
+    - [] sample per column
     - [] count of NAs per column
+    - [] count of NUlls
+    - [] count of zeros
     """
     if isinstance(df, pd.core.frame.DataFrame):
+        #col names
         column_names = list(df.columns)
-        
+
+        #
