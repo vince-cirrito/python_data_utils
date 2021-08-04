@@ -17,10 +17,8 @@ def df_screen(df):
     - [] data type per column
     - [] min and max for number type
     - [] random datapoint for non_number
+    - [] count of NAs per column
     """
     if isinstance(df, pd.core.frame.DataFrame):
-        column_names = df.columns
-        column_types = list(
-            map(lambda x: type(x), df, 
-                ['numeric', 'textual'])
-            )
+        column_names = list(df.columns)
+        
